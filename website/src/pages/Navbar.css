@@ -1,0 +1,75 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* evita vazamento */
+}
+
+nav label {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 4rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav input[type="button"] {
+  padding: 10px 12px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  transition: padding 0.2s ease;
+}
+
+nav input[type="button"]:hover {
+  padding: 12px 14px;
+}
+
+.create_account {
+  color: white;
+  background-color: blue;
+}
+
+.account {
+  margin-left: 15px;
+}
+
+@media (prefers-color-scheme: light) {
+  header {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
